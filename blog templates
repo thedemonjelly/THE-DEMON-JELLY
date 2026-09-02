@@ -1,0 +1,40 @@
+WRITING
+
+<div class="post">
+
+    <h2>POST TITLE</h2>
+
+    <div class="date">MONTH DAY, YEAR</div>
+
+    <p>
+        YOUR WRITING
+    </p>
+
+    <p>
+        MORE WRITING
+    </p>
+
+</div>
+
+PICTURE
+
+<div class="post">
+
+    <h2>POST TITLE</h2>
+
+    <div class="date">MONTH DAY, YEAR</div>
+
+    <img class="post-image" src="IMAGES/yourpicture.jpg">
+
+    <p>
+        YOUR WRITING GOES HERE.
+        The text will move beside the picture.
+    </p>
+
+    <p>
+        MORE WRITING GOES HERE.
+    </p>
+
+    <div style="clear: both;"></div>
+
+</div>

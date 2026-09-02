@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+@font-face {
+    font-family: "Sanguine Frost";
+    src: url("fonts/Sanguine Frost.ttf");
+}
+
+@font-face {
+    font-family: "iNked God";
+    src: url("fonts/iNked God.ttf");
+}
+h1 {
+    color: maroon;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-family: "Sanguine Frost";-webkit-text-stroke: 1px ghostwhite;
+}
+
+.post h2 {
+    color: ghostwhite;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-family: "iNked God";
+}
+.home a,
+.bottom-home a {
+    font-family: "iNked God";
+}
+
+.music-player {
+    width: 380px;
+    margin: 0 auto 35px;
+    padding: 12px;
+    background-color: #211814;
+    border: 2px solid #8B0000;
+    box-sizing: border-box;
+}
+
+.player-title {
+    color: firebrick;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 0 8px;
+    font-family: "iNked God";
+    letter-spacing: 2px;
+}
+
+.now-playing {
+    color: ghostwhite;
+    background-color: #0a0706;
+    border: 1px solid darkred;
+    padding: 8px;
+    font-size: 17px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 8px;
+    font-family: "iNked God";
+}
+
+.music-player audio {
+    width: 100%; margin-top: 4px;
+    filter: invert(1) hue-rotate(180deg);
+}
+    
+   .track-list {
+    margin-top: 10px;
+    max-height: 220px;
+    overflow-y: auto;
+    background-color: #0a0706;
+    border: 1px solid darkred;
+    padding: 5px;
+    box-sizing: border-box;
+} 
+    
+.track-list button {
+    display: block;
+    width: 100%;
+    padding: 6px 8px;
+    margin: 2px 0;
+    background-color: #211814;
+    border: 1px solid #5a0000;
+    color: ghostwhite;
+    font-family: "iNked God";
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.track-list button:hover {
+    background-color: #3a1612;
+}
+
+.radio-controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.radio-controls button {
+    width: 45px;
+    height: 30px;
+    background-color: #211814;
+    border: 1px solid #8B0000;
+    color: ghostwhite;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.radio-controls button:hover {
+    background-color: #3a1612;
+}
+
+  body {
+    margin: 0;
+    background-color: black;
+    background-image: url("IMAGES/nd.jfif");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: ghostwhite;
+}
+
+
+    </style>
+<head>
+    <title>MY BLOG</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: ghostwhite;
+            font-family: Georgia, serif;
+        }
+
+        .blog {
+            width: 700px;
+            margin: 60px auto;
+        }
+
+        h1 {
+            color: maroon;
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 25px;
+        }
+
+        .home {
+            text-align: center;
+            margin: 20px 0 50px;
+        }
+
+        .home a {
+            color: firebrick;
+            text-decoration: none;
+        }
+
+        .post {
+            border-bottom: 2px solid darkred;
+            padding-bottom: 35px;
+            margin-bottom: 40px;
+        }
+
+        .post h2 {
+            color: ghostwhite;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: firebrick;
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .post p {
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .bottom-home {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        .bottom-home a {
+            color: firebrick;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div class="blog">
+
+    <h1>MY BLOG</h1>
+
+<div class="music-player">
+
+    <p class="player-title">♫ THE DEMON JELLY RADIO ♫</p>
+
+    <div class="now-playing">
+        Choose a song
+    </div>
+<audio id="radio" preload="auto"></audio>
+
+<div class="radio-controls">
+    <button id="prev" type="button">◀</button>
+    <button id="play" type="button">▶</button>
+    <button id="next" type="button">▶</button>
+</div>
+    <audio controls>
+       
+    </audio>
+    
+
+</div>
+
+
+    <div class="home">
+        <a href="index.html">HOME</a>
+    </div>
+
+
+    <!-- FIRST POST -->
+
+    <div class="post">
+
+        <h2>FIRST POST</h2>
+
+        <div class="date">August 11, 2026</div>
+
+        <p>
+            Hi! This is my first blog, my name is Jess but people call me Jelly,
+            I love drawing and food, my cat Ghost and VAMPIRES!!
+        </p>
+
+        <p>
+            I can't wait to keep writing and talking about my life, bye bye!!
+        </p>
+
+    </div>
+
+
+    <!-- SECOND POST -->
+
+    
+
+    <div class="bottom-home">
+        <a href="index.html">HOME</a>
+    </div>
+
+</div>
+
+</body>
+
+<script>
+const songs = [
+    "A Letter to Elise.mp3",
+    "A Question of Lust.mp3",
+    "A Question of Time.mp3",
+    "Aerials.mp3",
+    "Age of Consent - 2015 Remaster.mp3",
+    "All You Need Is Me.mp3",
+    "Ask - 2011 Remaster.mp3",
+    "Attack.mp3",
+    "ATWA.mp3",
+    "B.Y.O.B..mp3",
+    "Behind the Wheel.mp3",
+    "Bela Lugosi's Dead (Official Version).mp3",
+    "Bigmouth Strikes Again - 2011 Remaster.mp3",
+    "Bite My Hip.mp3",
+    "Black Celebration.mp3",
+    "Blue Dress.mp3",
+    "Blue Monday.mp3",
+    "Boom!.mp3",
+    "Bounce.mp3",
+    "Boys Don't Cry.mp3",
+    "But Not Tonight.mp3",
+    "Chic 'N' Stu.mp3",
+    "Close to Me - 2006 Remaster.mp3",
+    "Come Back to Camden.mp3",
+    "Dangerous.mp3",
+    "Don't Say You Love Me.mp3",
+    "Dreaming.mp3",
+    "Enjoy the Silence.mp3",
+    "Everyday Is Like Sunday - 2011 Remaster.mp3",
+    "Get the Balance Right!.mp3",
+    "Goo Goo Muck.mp3",
+    "Hairdresser on Fire - 2010 Remaster.mp3",
+    "Halo.mp3",
+    "Heaven Knows I'm Miserable Now - 2011 Remaster.mp3",
+    "Here Is the House.mp3",
+    "High.mp3",
+    "Holy Mountains.mp3",
+    "I Know It's Over - 2011 Remaster.mp3",
+    "I-E-A-I-A-I-O.mp3",
+    "In Between Days - 2006 Remaster.mp3",
+    "In the Future When All's Well.mp3",
+    "Innervision.mp3",
+    "Irish Blood, English Heart.mp3",
+    "Just Can't Get Enough.mp3",
+    "Just Like Heaven - Remastered 2006.mp3",
+    "Kill Rock 'n Roll.mp3",
+    "King Leer - 2013 Remaster.mp3",
+    "Let Me Kiss You - Remastered.mp3",
+    "Lie to Me.mp3",
+    "Lonely Day.mp3",
+    "Love Will Tear Us Apart - 2020 Remaster.mp3",
+    "Lovesong - 2010 Remaster.mp3",
+    "Lovesong - Remastered.mp3",
+    "Mr. Jack.mp3",
+    "Mute Witness - 2013 Remaster.mp3",
+    "Needles.mp3",
+    "Never Let Me Down Again.mp3",
+    "Nothing.mp3",
+    "Old School Hollywood.mp3",
+    "Ouija Board, Ouija Board - 2010 Remaster.mp3",
+    "Personal Jesus.mp3",
+    "Pictures of You - 2010 Remaster.mp3",
+    "Please, Please, Please, Let Me Get What I Want - 2011 Remaster.mp3",
+    "Policy of Truth.mp3",
+    "Precious.mp3",
+    "Pretty Girls Make Graves - 2011 Remaster.mp3",
+    "Prison Song.mp3",
+    "Question!.mp3",
+    "Revenga.mp3",
+    "Sad Statue.mp3",
+    "Science.mp3",
+    "Shake the Disease.mp3",
+    "She's Like Heroin.mp3",
+    "Sheila Take a Bow - 2011 Remaster.mp3",
+    "Soldier Side.mp3",
+    "Spellbound.mp3",
+    "Spiders.mp3",
+    "Strangelove.mp3",
+    "Stripped.mp3",
+    "Sugar.mp3",
+    "Sweetest Perfection.mp3",
+    "That's How People Grow Up.mp3",
+    "The Boy with the Thorn in His Side - 2017 Master.mp3",
+    "The Killing Moon.mp3",
+    "The Last of the Famous International Playboys - 2010 Remaster.mp3",
+    "The More You Ignore Me, The Closer I Get - Remastered.mp3",
+    "The Things You Said.mp3",
+    "There Is a Light That Never Goes Out - 2011 Remaster.mp3",
+    "This Charming Man - 2011 Remaster.mp3",
+    "This Cocaine Makes Me Feel Like I'm On This Song.mp3",
+    "This Night Has Opened My Eyes - 2010 Remaster.mp3",
+    "Toxicity.mp3",
+    "Vicinity Of Obscenity.mp3",
+    "Waiting for the Night.mp3",
+    "We Hate It When Our Friends Become Successful - 2014 Remaster.mp3",
+    "West End Girls - 2018 Remaster.mp3",
+    "World In My Eyes.mp3",
+    "Wrong Number.mp3",
+    "X.mp3",
+    "You're the One for Me, Fatty - 2014 Remaster.mp3"
+];
+
+const trackList = document.querySelector(".track-list");
+
+songs.forEach(function(song) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = song.replace(".mp3", "");
+
+    button.onclick = function() {
+        document.querySelector("audio source").src = "MUSIC/" + song;
+        document.querySelector("audio").load();
+        document.querySelector("audio").play();
+    };
+
+    trackList.appendChild(button);
+});
+</script>
+<script>
+const radio = document.getElementById("radio");
+const playButton = document.getElementById("play");
+    let currentSong = 0;
+const prevButton = document.getElementById("prev");
+
+playButton.onclick = function() {
+    if (radio.paused) {
+        radio.play();
+        playButton.textContent = "❚❚";
+    } else {
+        radio.pause();
+        playButton.textContent = "▶";
+    }
+};prevButton.onclick = function() {
+    currentSong--;
+
+    if (currentSong < 0) {
+        currentSong = songs.length - 1;
+    }
+
+    radio.src = "MUSIC/" + songs[currentSong];
+    radio.play();
+};
+
+const nextButton = document.getElementById("next");
+
+nextButton.onclick = function() {
+    currentSong++;
+
+    if (currentSong >= songs.length) {
+        currentSong = 0;
+    }
+
+    radio.src = "MUSIC/" + songs[currentSong];
+    radio.play();
+};
+    
+</script>
+
+<script>
+radio.src = "MUSIC/" + songs[0];
+</script>
+
+</html>
+
+
